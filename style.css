@@ -1,0 +1,76 @@
+
+:root {
+    --obsidian: #0f172a;
+    --azure: #3b82f6;
+    --emerald: #10b981;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lexend', sans-serif;
+}
+
+.font-body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.glass {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, var(--azure), var(--emerald));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+    z-index: -1;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--obsidian);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Glass Header Class */
+.nav-scrolled {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(16px);
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
